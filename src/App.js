@@ -3,6 +3,7 @@ import { render } from "react-dom";
 import axios from "axios";
 import GridOfHouses from "./GridOfHouses";
 import { Router, Link } from "@reach/router";
+import Houses from "./Houses";
 
 const App = () => {
   const [houses, setHouses] = useState([]);
@@ -21,6 +22,7 @@ const App = () => {
         </Link>
         <Router>
           <GridOfHouses path="/" houses={houses} />
+          <Houses path="/houses/:id" />
         </Router>
       </div>
     </React.StrictMode>
