@@ -16,8 +16,12 @@ const App = () => {
   return (
     <React.StrictMode>
       <div className="grid-container">
-        <h1>Houses of Game Of Thrones</h1>
-        <GridOfHouses houses={houses} />
+        <Link to="/" className="no-text-deco">
+          <h1>Houses of Game Of Thrones</h1>
+        </Link>
+        <Router>
+          <GridOfHouses path="/" houses={houses} />
+        </Router>
       </div>
     </React.StrictMode>
   );
