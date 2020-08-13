@@ -4,7 +4,9 @@ import { render } from "react-dom";
 const App = () => {
   return (
     <React.StrictMode>
-      <h1>Hi from App</h1>
+      <div className="grid-container">
+        <h1>Houses of Game Of Thrones</h1>
+      </div>
     </React.StrictMode>
   );
 };
