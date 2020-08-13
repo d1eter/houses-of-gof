@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { Link } from "@reach/router";
 
 const Houses = ({ id }) => {
   const [house, setHouse] = useState({});
@@ -19,9 +20,21 @@ const Houses = ({ id }) => {
         <h1>No House Found</h1>
       ) : (
         <>
-          <div>{house.name}</div>
-          <div>{house.region}</div>
-          <div>{house.words}</div>
+          <h3>{house.name}</h3>
+          <ul className="house-details">
+            <li>
+              Region: <span>{house.region}</span>
+            </li>
+            <li>
+              Coat of Arms: <span>{house.coatOfArms}</span>
+            </li>
+            <li>
+              Words: <span>{house.words}</span>
+            </li>
+          </ul>
+          <Link to="/" className="no-text-deco back-link">
+            &larr; Back to Houses
+          </Link>
         </>
       )}
     </>

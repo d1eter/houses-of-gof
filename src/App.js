@@ -12,7 +12,6 @@ const App = () => {
     setHouses([]);
     axios.get("https://anapioficeandfire.com/api/houses/").then((response) => {
       setHouses(response);
-      console.log(response);
     });
   }, []);
 

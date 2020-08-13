@@ -58,6 +58,17 @@ h1 {
   text-align: center;
 }
 
+.house-details {
+  margin-bottom: 5rem;
+}
+.back-link {
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #fff;
+  background-color: #000;
+}
+
 /* if grid is supported, remove the margin set for the fallback */
 @supports (display: grid) {
   .card {
