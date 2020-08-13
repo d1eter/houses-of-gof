@@ -27,4 +27,4 @@ http://localhost:1234
 
 ## Author
 
-- **Dieter Pankratz** - _Initial work_ - [PurpleBooth](https://github.com/d1eter)
+- **Dieter Pankratz** - _Initial work_ - [d1eter](https://github.com/d1eter)
